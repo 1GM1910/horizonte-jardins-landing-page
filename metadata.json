@@ -1,0 +1,6 @@
+{
+  "name": "Horizonte Jardins - Apartamentos de Alto Padrão",
+  "description": "Descubra apartamentos de alto padrão com arquitetura autoral, lazer completo e localização privilegiada. Cadastre-se e receba a tabela exclusiva de lançamento.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
