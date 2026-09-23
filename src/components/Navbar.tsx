@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ArrowUpRight, Menu, X } from 'lucide-react';
-import { INTEREST_FORM_URL } from '../data/apartments';
+import { INTEREST_FORM_URL, trackInterestClick } from '../data/apartments';
 
 export const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -60,6 +60,7 @@ export const Navbar: React.FC = () => {
               href={INTEREST_FORM_URL}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => trackInterestClick('navbar')}
               className="inline-flex items-center gap-2 px-5 py-2.5 text-xs sm:text-sm font-semibold text-neutral-950 bg-amber-400 hover:bg-amber-300 active:scale-[0.98] rounded-md transition-all duration-150 shadow-md shadow-amber-400/20 whitespace-nowrap"
             >
               <span>Tenho Interesse</span>

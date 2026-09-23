@@ -1,5 +1,14 @@
 export const INTEREST_FORM_URL = 'https://forms.gle/ZTiTGGkuThTTP5yh9';
 
+export const trackInterestClick = (location?: string) => {
+  if (typeof window !== 'undefined' && (window as any).gtag) {
+    (window as any).gtag('event', 'click_tenho_interesse', {
+      event_category: 'lead_generation',
+      event_label: location || 'cta_button',
+    });
+  }
+};
+
 export interface Typology {
   id: string;
   name: string;

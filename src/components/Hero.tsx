@@ -1,6 +1,6 @@
 import React from 'react';
 import { ArrowUpRight, ChevronDown, ShieldCheck, Sparkles, Building2 } from 'lucide-react';
-import { INTEREST_FORM_URL } from '../data/apartments';
+import { INTEREST_FORM_URL, trackInterestClick } from '../data/apartments';
 import heroImage from '../assets/images/hero_luxury_apartment_1790202483859.jpg';
 
 export const Hero: React.FC = () => {
@@ -50,6 +50,7 @@ export const Hero: React.FC = () => {
               href={INTEREST_FORM_URL}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => trackInterestClick('hero_section')}
               className="inline-flex items-center justify-center gap-3 px-8 py-4 text-base font-bold text-neutral-950 bg-amber-400 hover:bg-amber-300 active:scale-[0.98] rounded-md transition-all duration-200 shadow-xl shadow-amber-400/25 group cursor-pointer"
             >
               <span>Tenho Interesse</span>
